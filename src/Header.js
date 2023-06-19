@@ -12,7 +12,7 @@ const Header = () => {
             </Link>
           </div>
           <div className='headerUtilMenu'>
-            <img src={process.env.PUBLIC_URL + '/img/mypage.png'} alt="myPage" />
+            <img src={process.env.PUBLIC_URL + '/img/myPage.png'} alt="myPage" />
             <span className='barMenu'></span>
             <span className='barTop'></span>
             <span className='barBottom'></span>
