@@ -146,22 +146,10 @@ a {
   color: #fff;
 }
 
-@keyframes fadeInRight {
-  0% {
-      opacity: 0;
-      transform: translateX(100%);
-  }
-  to {
-      opacity: 1;
-      transform: translateZ(0);
-  }
-}
-
 .section1 p {
   font-size: 16px;
   line-height: 1.2;
   font-family: sans-serif;
-  animation: fadeInRight 1s;
 }
 
 .section1 h2 {
@@ -169,7 +157,6 @@ a {
   line-height: 1.2;
   font-family: sans-serif;
   font-weight: 300;
-  animation: fadeInRight 1s;
 }
 
 .section1_more {
