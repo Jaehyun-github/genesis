@@ -1,44 +1,51 @@
 {
-  "data" : [
+  "dataSection1" : [
     {
       "id" : "GENESIS",
-      "url" : "/img/g70_mo.jpg",
+      "mobileFile" : "/img/g70_mo.jpg",
+      "pcFile" : "/img/g70_pc.jpg",
       "name" : "G70",
       "title" : "나를 담아 더 자유롭게"
     },
     {
       "id" : "GENESIS",
-      "url" : "/img/g70_sb_mo.jpg",
+      "mobileFile" : "/img/g70_sb_mo.jpg",
+      "pcFile" : "/img/g70_sb_pc.jpg",
       "name" : "G70 SHOOTING BRAKE",
       "title" : "온전히 나답게"
     },
     {
       "id" : "GENESIS",
-      "url" : "/img/g80_mo.jpg",
+      "mobileFile" : "/img/g80_mo.jpg",
+      "pcFile" : "/img/g80_pc.jpg",
       "name" : "G80",
       "title" : "2023년형 출시"
     },
     {
       "id" : "GENESIS",
-      "url" : "/img/g90_mo.jpg",
+      "mobileFile" : "/img/g90_mo.jpg",
+      "pcFile" : "/img/g90_pc.jpg",
       "name" : "G90",
       "title" : "2023년형 출시"
     },    
     {
       "id" : "GENESIS",
-      "url" : "/img/gv60_mo.jpg",
+      "mobileFile" : "/img/gv60_mo.jpg",
+      "pcFile" : "/img/gv60_pc.jpg",
       "name" : "GV60",
       "title" : "2023년형 출시"
     },
     {
       "id" : "GENESIS",
-      "url" : "/img/gv70_mo.jpg",
+      "mobileFile" : "/img/gv70_mo.jpg",
+      "pcFile" : "/img/gv70_pc.jpg",
       "name" : "GV70",
       "title" : "또 다른 감동을 선사하는 시간"
     },
     {
       "id" : "GENESIS",
-      "url" : "/img/gv80_mo.jpg",
+      "mobileFile" : "/img/gv80_mo.jpg",
+      "pcFile" : "/img/gv80_pc.jpg",
       "name" : "GV80",
       "title" : "2023년형 출시"
     }
