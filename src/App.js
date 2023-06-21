@@ -2,17 +2,33 @@ import './App.css';
 import FullscreenVideo from './FullscreenVideo';
 import Header from './Header';
 import Container from './Container';
+import NotFound from './NotFound';
 import { Route, Routes } from 'react-router-dom';
+import G70 from './G70';
+import G70Sb from './G70Sb';
+import G80 from './G80';
+import G90 from './G90';
+import GV60 from './GV60';
+import GV70 from './GV70';
+import GV80 from './GV80';
 
 function App() {
 
   return (
     <div className="App">
       <FullscreenVideo />
+      <Header />
       <Routes>
-        <Route path='/' element={<Header />} />
+        <Route exact path='/' element={<Container />} />
+        <Route exact path="/more/G70" element={<G70 />} />
+        <Route exact path="/more/G70 SHOOTING BRAKE" element={<G70Sb />} />
+        <Route exact path="/more/G80" element={<G80 />} />
+        <Route exact path="/more/G90" element={<G90 />} />
+        <Route exact path="/more/GV60" element={<GV60 />} />
+        <Route exact path="/more/GV70" element={<GV70 />} />
+        <Route exact path="/more/GV80" element={<GV80 />} />
+        <Route exact path='*' element={<NotFound />} />
       </Routes>
-      <Container />
     </div>
   );
 }

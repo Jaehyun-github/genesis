@@ -1,14 +1,16 @@
 import './Container.css';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, EffectCreative } from 'swiper';
+import SwiperCore, { Pagination, EffectCreative, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "swiper/css/effect-creative";
+import 'swiper/css/autoplay';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
-SwiperCore.use([ Pagination ])
+SwiperCore.use([ Pagination, Autoplay ])
 
 const Container = () => {
 
@@ -51,8 +53,8 @@ const Container = () => {
     <section>
       <div className='section1'>
         <Swiper
-          modules={[Pagination, EffectCreative]} effect={"creative"} spaceBetween={0} slidesPerView={1}
-          pagination={{clickable: true}} allowTouchMove={true} loop={true} grabCursor={true} 
+          modules={[Pagination, EffectCreative]} effect={"creative"} spaceBetween={0} slidesPerView={1} pagination={{clickable: true}} 
+          allowTouchMove={true} loop={true} grabCursor={true} autoplay={{delay: 8000, disableOnInteraction: false}}
           creativeEffect={{prev: {shadow: true, translate: ["-20%", 0, -1],}, next: {translate: ["100%", 0, 0],}}}>
 
           {slide.map((_, idx) => {
@@ -67,7 +69,8 @@ const Container = () => {
                       <p>{title[idx]}</p>
                     </div>
                     <div className='section1_more'>
-                      <span className='more'>더 알아보기 &gt;</span>
+                      <Link to={`/more/${name[idx]}`}><span className='more'>더 알아보기 &gt;</span></Link>
+                      {/* 더 알아보기를 클릭 했을 때 /more/(json에서 불러오는 name)의 순서대로 url을 지정함 */}
                       <span className='send'>견적 내기 &gt;</span>
                     </div>
                   </>

@@ -1,81 +1,183 @@
-.section1 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  top: 59px;
+@media (max-width: 1023px) {
+
+  .section1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 59px;
+  }
+
+  .section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section1_title {
+    height: 137px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    color: #fff;
+  }
+
+  .section1 p {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: sans-serif;
+  }
+
+  .section1 h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+
+  .section1_more {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 135px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 150px;
+    height: 70px;
+  }
+
+  .section1_more .more {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .section1_more .send {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: transparent !important;
+    position: relative;
+    bottom: 70px;
+    border: 1px solid transparent;
+    width: 5px !important;
+    height: 5px !important;
+    opacity: 1 !important;
+    background-color: #999 !important;
+    margin: 0 6px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 2px solid #fff;
+    background-color: transparent !important;
+  }
 }
 
-.section1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+
+
+/* max-width: 1023px 끝 */
+
+
+
+
+@media (min-width : 1024px) {
+  .section1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 69px;
+  }
+  
+  .section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .section1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .section1_title {
+    height: 137px;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    color: #fff;
+    padding: 0 140px;
+  }
+  
+  .section1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  .section1 h2 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  
+  .section1_more {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 230px;
+    left: 200px;
+    color: #fff;
+    padding: 0 140px;
+  }
+  
+  .section1_more .more {
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .section1_more .send {
+    margin-left: 70px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: transparent !important;
+    position: relative;
+    bottom: 100px;
+    border: 1px solid transparent;
+    width: 6px !important;
+    height: 6px !important;
+    opacity: 1 !important;
+    background-color: #999 !important;
+    margin: 0 12px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    border: 2px solid #fff;
+    background-color: transparent !important;
+  }
 }
 
-.section1 video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.section1_title {
-  /* width: 100%; */
-  height: 137px;
-  position: absolute;
-  top: 40px;
-  left: 20px;
-  color: #fff;
-}
-
-.section1 p {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: sans-serif;
-}
-
-.section1 h2 {
-  font-size: 42px;
-  line-height: 1.2;
-  font-family: sans-serif;
-  font-weight: 300;
-}
-
-.section1_more {
-  font-size: 16px;
-  font-weight: 400;
-  position: absolute;
-  bottom: 135px;
-  left: 20px;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  width: 150px;
-  height: 70px;
-  z-index: 9999;
-}
-
-.section1_more .more {
-  cursor: pointer;
-}
-
-.section1_more .send {
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.swiper-pagination-bullet {
-  background-color: transparent !important;
-  position: relative;
-  bottom: 70px;
-  border: 1px solid transparent;
-  width: 5px !important;
-  height: 5px !important;
-  opacity: 1 !important;
-  background-color: #555 !important;
-  margin: 0 6px !important;
-}
-
-.swiper-pagination-bullet-active {
-  border: 2px solid #fff;
-}
+/* min-width: 1024px 끝 */
