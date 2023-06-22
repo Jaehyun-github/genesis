@@ -11,6 +11,7 @@ import G90 from './G90';
 import GV60 from './GV60';
 import GV70 from './GV70';
 import GV80 from './GV80';
+import Footer from './Footer';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/more/GV80" element={<GV80 />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

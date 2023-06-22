@@ -1,0 +1,186 @@
+@media (max-width: 1023px) {
+
+  .g90_section1 {
+    width: 100%;
+    height: calc(100% - 59px);
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 59px;
+  }
+
+  .g90_section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .g90_section1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .g90_section1_title {
+    height: 137px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    color: #fff;
+  }
+
+  .g90_section1 p {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: sans-serif;
+  }
+
+  .g90_section1 h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+
+  .g90_section1_more {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 70px;
+  }
+
+  .g90_section1_more .g90_send {
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .g90_section1_more .g90_LW_send {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .g90_section1_desc {
+    font-size: 16px;
+    color: #ccc;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .g90_section1_desc p{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    padding: 0 20px;
+    display: none;
+  }
+}
+
+
+
+
+/* max-width: 1023px 끝 */
+
+
+
+
+@media (min-width : 1024px) {
+
+  .g90_section1 {
+    width: 100%;
+    height: calc(100% - 69px);
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 69px;
+  }
+  
+  .g90_section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .g90_section1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .g90_section1_title {
+    height: 137px;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    color: #fff;
+    padding: 0 140px;
+  }
+  
+  .g90_section1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  .g90_section1 h2 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  
+  .g90_section1_more {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    color: #fff;
+    height: 70px;
+    padding: 0 140px;
+  }
+
+  .g90_section1_more .g90_LW_send {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 70px;
+  }
+
+  .g90_section1_more .g90_send {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .g90_section1_desc {
+    font-size: 16px;
+    color: #ccc;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .g90_section1_desc p{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+/* min-width: 1024px 끝 */
