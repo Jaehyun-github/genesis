@@ -27,7 +27,7 @@ function App() {
         <Route exact path="/more/GV60" element={<GV60 />} />
         <Route exact path="/more/GV70" element={<GV70 />} />
         <Route exact path="/more/GV80" element={<GV80 />} />
-        <Route exact path='*' element={<NotFound />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );
