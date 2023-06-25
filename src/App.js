@@ -2,6 +2,9 @@ import './App.css';
 import FullscreenVideo from './FullscreenVideo';
 import Header from './Header';
 import Container from './Container';
+import MyPage from './MyPage';
+import Login from './Login';
+import CreateAccount from './CreateAccount';
 import NotFound from './NotFound';
 import { Route, Routes } from 'react-router-dom';
 import G70 from './G70';
@@ -21,6 +24,9 @@ function App() {
       <Header />
       <Routes>
         <Route exact path='/' element={<Container />} />
+        <Route exact path='/mypage' element={<MyPage />} />
+        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/createAccount' element={<CreateAccount />} />
         <Route exact path="/more/G70" element={<G70 />} />
         <Route exact path="/more/G70 SHOOTING BRAKE" element={<G70Sb />} />
         <Route exact path="/more/G80" element={<G80 />} />

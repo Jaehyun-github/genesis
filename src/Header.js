@@ -28,9 +28,9 @@ const Header = () => {
           <div className='header_util_menu'>
             <ul>
               <li className='customer_service'>고객센터</li>
-              {isMobile ? (
-                <img src={process.env.PUBLIC_URL + '/img/myPage.png'} alt="myPage" />) : (<li className='my_page'>마이 페이지</li>
-              )}
+              <Link to='/mypage'>
+                {isMobile ? (<img src={process.env.PUBLIC_URL + '/img/myPage.png'} alt="myPage" />) : (<li className='my_page'>마이 페이지</li>)}
+              </Link>
               <li className='header_search'><img src={process.env.PUBLIC_URL + '/img/headerSearch.png'} alt="headerSearch" /></li>
               <li className='bar_menu'><span></span></li>
               <li className='bar_top'><span></span></li>

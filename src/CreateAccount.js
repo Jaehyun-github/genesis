@@ -1,3 +1,4 @@
+import './CreateAccount.css';
 import React from 'react';
 
 const CreateAccount = () => {
