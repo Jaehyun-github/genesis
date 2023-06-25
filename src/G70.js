@@ -10,6 +10,7 @@ const G70 = () => {
     <section>
       <div className='g70_section1'>
         <video muted autoPlay loop playsInline src={isMobile ? process.env.PUBLIC_URL + '/video/g70_mo.mp4' : process.env.PUBLIC_URL + '/video/g70_pc.mp4'} alt="G70" />
+        <div className='vignette'></div>
         <div className='g70_section1_title'>
           <p>GENESIS</p>
           <h2>G70</h2>

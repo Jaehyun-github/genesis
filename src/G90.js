@@ -10,6 +10,7 @@ const G90 = () => {
     <section>
       <div className='g90_section1'>
         <video muted autoPlay loop playsInline src={process.env.PUBLIC_URL + '/video/g90.mp4'} alt="G90" />
+        <div className='vignette'></div>
         <div className='g90_section1_title'>
           <p>GENESIS</p>
           <h2>G90</h2>
