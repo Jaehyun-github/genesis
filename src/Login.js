@@ -11,8 +11,10 @@ const Login = () => {
           <div className='login_section1_in_title'>
             <strong>이메일 로그인</strong>
             <form>
-              <input type="email" placeholder='이메일 주소'/>
-              <input type="password" placeholder='비밀번호'/>
+              <label htmlFor='login_id'></label>
+              <input type="email" id='login_id' placeholder='이메일 주소' />
+              <label htmlFor='login_password'></label>
+              <input type="password" id='login_password' placeholder='비밀번호' autoComplete='on' />
               <button type='submit'>
                 <span>로그인</span>
               </button>
