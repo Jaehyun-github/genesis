@@ -67,11 +67,16 @@
   font-size: 18px;
   font-weight: 700;
   width: 100%;
+  cursor: pointer;
 }
 
 .login_section1_in button:hover {
   border: 1px solid #333;
   opacity: 0.9;
+}
+
+.login_section1_in span {
+  color: #fff;
 }
 
 .login_section1_in p {
