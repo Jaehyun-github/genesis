@@ -17,11 +17,11 @@ const CreateAccount = () => {
               <input type="password" id='create_account_password' placeholder='비밀번호' autoComplete='on' />
               <label htmlFor='create_account_password_confirm'>비밀번호 확인</label>
               <input type="password" id='create_account_password_confirm' placeholder='비밀번호 확인' autoComplete='on' />
-              <button type='button'> {/* submit 보류 */}
-                <Link to='/createAccountComplete'>
+              <Link to='/createAccountComplete'>
+                <button type='button'> {/* submit 보류 */}
                   <span>가입하기</span>
-                </Link>
-              </button>
+                </button>
+              </Link>
             </form>
             <div className='create_account_section1_menu'>
               <p>아이디 찾기</p>
