@@ -1,10 +1,7 @@
 import './GV60.css';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 
 const GV60 = () => {
-
-  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (  
     <section>

@@ -1,10 +1,7 @@
 import './G80.css';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 
 const G80 = () => {
-
-  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (  
     <section>

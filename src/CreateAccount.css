@@ -96,3 +96,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.error_message {
+  color: red;
+  font-size: 14px;
+}
+
+.error_message::before {
+  display: inline;
+  content: "⚠ ";
+}
