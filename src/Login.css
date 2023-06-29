@@ -36,10 +36,10 @@
 }
 
 .login_section1_in input {
-  padding: 15px 10px;
+  padding: 10px;
   text-align: start;
   color: #111;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   margin: 10px 0;
   opacity: 0.8;
@@ -50,6 +50,7 @@
 
 .login_section1_in input::placeholder {
   opacity: 0.6;
+  font-size: 13px;
 }
 
 .login_section1_in input:focus {
