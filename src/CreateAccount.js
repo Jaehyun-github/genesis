@@ -1,19 +1,30 @@
+/* eslint-disable no-useless-escape */
 import './CreateAccount.css';
-import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 const CreateAccount = () => {
+  
+  const { register, handleSubmit, watch, formState : {errors} } = useForm({ mode : "onChange" }); 
+                                                                  // {mode : "onChange"}는 실시간으로 유효성 검사를 해줌
+  const navigate = useNavigate();
 
-  // const inputRef = useRef();
+  const onSubmit = (data) => {
+    console.log('data', data);
+    navigate('/CreateAccountComplete'); // 유효성 검사가 성공적으로 끝나면 onSubmit을 거쳐 <CreateAccountComplete /> 페이지로 이동
+  }
 
   // useEffect(() => {
-  //     inputRef.current.focus(); // 페이지가 처음 렌더 됐을때 id input에 포커스를 줌 (깜빡임)
-  // }, []) // 그냥 autoFocus로 대체함
+  //   const hasErrors = Object.keys(errors).length > 0 ||
+  //   watch('email') === "" || 
+  //   watch('password') === "" || 
+  //   watch('password_confirm') === "";
+
+  //   // setHasErrors(hasErrors);
   
-  const { register, watch, formState : {errors} } = useForm();
-    console.log(watch('email'))
-    console.log(errors)
+  // }, [errors, watch])
+  
   return (
     <section>
       <div className='create_account_section1'>
@@ -21,20 +32,22 @@ const CreateAccount = () => {
         <div className='create_account_section1_in'>
           <div className='create_account_section1_in_title'>
             <strong>회원가입</strong>
-            <form>
-              <label htmlFor='create_account_id'>이메일 주소</label>
-              <input type="email" id='create_account_id' name='email' placeholder='이메일 주소' autoFocus 
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <label htmlFor='email'>이메일 주소</label>
+              <input type="email" id='email' name='email' placeholder='이메일 주소' autoFocus
                 {...register('email', { required : true, pattern : /^\S+@\S+$/i })} />
-                {/* {errors.email && <p>{errors.email.message}</p>} */}
-              <label htmlFor='create_account_password'>비밀번호</label>
-              <input type="password" id='create_account_password' placeholder='비밀번호' autoComplete='on' />
-              <label htmlFor='create_account_password_confirm'>비밀번호 확인</label>
-              <input type="password" id='create_account_password_confirm' placeholder='비밀번호 확인' autoComplete='on' />
-              <Link to='/createAccountComplete'>
-                <button type='button'> {/* submit 보류 */}
-                  <span>가입하기</span>
-                </button>
-              </Link>
+                {errors.email && <p className='error_message'>이메일 형식이 올바르지 않습니다.</p>}
+              <label htmlFor='password'>비밀번호</label>
+              <input type="password" id='password' name='password' placeholder='비밀번호' autoComplete='on'
+                {...register('password', { required : true, pattern : /(?=.*\d{1,50})(?=.*[~`!@#$%\^&*()-+=]{1,50})(?=.*[a-zA-Z]{2,50}).{8,16}$/, minLength : 8, maxLength : 16 })} />
+                {errors.password && <p className='error_message'>비밀번호는 영문, 숫자, 특수기호를 조합하여 8~16자로 사용하세요.</p>} 
+              <label htmlFor='password_confirm'>비밀번호 확인</label>
+              <input type="password" id='password_confirm' name='password_confirm' placeholder='비밀번호 확인' autoComplete='on'
+                {...register('password_confirm', { required : true, validate : (value) => value === watch('password')})} />
+                {errors.password_confirm && <p className='error_message'>비밀번호가 일치하지 않습니다.</p>}
+              <button type='submit'>
+                <span>가입하기</span>
+              </button>  
             </form>
             <div className='create_account_section1_menu'>
               <p>아이디 찾기</p>

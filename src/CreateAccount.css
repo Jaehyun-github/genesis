@@ -74,6 +74,10 @@
   cursor: pointer;
 }
 
+.create_account_section1_in .button_disabled {
+  opacity: 0.5;
+}
+
 .create_account_section1_in button:hover {
   border: 1px solid #333;
   opacity: 0.9;
@@ -97,12 +101,14 @@
   justify-content: space-between;
 }
 
-.error_message {
-  color: red;
-  font-size: 14px;
+form .error_message {
+  color: #f05650;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
-.error_message::before {
+form .error_message::before {
   display: inline;
   content: "⚠ ";
 }
