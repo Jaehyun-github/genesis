@@ -93,3 +93,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+form .error_message {
+  color: #f05650;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+form .error_message::before {
+  display: inline;
+  content: "⚠ ";
+}

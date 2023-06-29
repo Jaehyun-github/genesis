@@ -12,7 +12,7 @@ const CreateAccount = () => {
 
   const onSubmit = (data) => {
     console.log('data', data);
-    navigate('/CreateAccountComplete'); // 유효성 검사가 성공적으로 끝나면 onSubmit을 거쳐 <CreateAccountComplete /> 페이지로 이동
+    navigate('/CreateAccountComplete'); // 유효성 검사가 성공적으로 끝나면 onSubmit을 거쳐 <CreateAccountComplete /> 컴포넌트로 이동
   }
 
   // useEffect(() => {
