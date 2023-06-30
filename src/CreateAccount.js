@@ -12,7 +12,7 @@ const CreateAccount = () => {
 
   const onSubmit = (data) => {
     console.log('data', data);
-    navigate('/CreateAccountComplete'); // 유효성 검사가 성공적으로 끝나면 onSubmit을 거쳐 <CreateAccountComplete /> 컴포넌트로 이동
+    navigate('/CreateAccountComplete'); // 유효성 검사가 성공적으로 끝나면 onSubmit 쪽을 거쳐 <CreateAccountComplete /> 컴포넌트로 이동
   }
 
   // useEffect(() => {
@@ -35,7 +35,7 @@ const CreateAccount = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <label htmlFor='email'>이메일 주소</label>
               <input type="email" id='email' name='email' placeholder='이메일 주소' autoFocus
-                {...register('email', { required : true, pattern : /^\S+@\S+$/i })} />
+                {...register('email', { required : true, pattern : /^[A-Za-z0-9]([-_.]?[A-Za-z0-9])*@[A-Za-z0-9]([-_.]?[A-Za-z0-9])*\.[A-Za-z]{2,3}$/ })} />
                 {errors.email && <p className='error_message'>이메일 형식이 올바르지 않습니다.</p>}
               <label htmlFor='password'>비밀번호</label>
               <input type="password" id='password' name='password' placeholder='비밀번호' autoComplete='on'
